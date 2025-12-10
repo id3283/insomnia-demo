@@ -1,0 +1,114 @@
+type: collection.insomnia.rest/5.0
+schema_version: "5.1"
+name: Local Spring Web Server REST server
+meta:
+  id: wrk_8d8dabeb9b134f22b4124097cebc97b5
+  created: 1765386988695
+  modified: 1765386988695
+  description: ""
+collection:
+  - url: http://localhost:8080/products
+    name: Get all products
+    meta:
+      id: req_1b1e33319e0f4156b418651c732f845d
+      created: 1765387047783
+      modified: 1765387270100
+      isPrivate: false
+      description: ""
+      sortKey: -1765387047783
+    method: GET
+    headers:
+      - name: User-Agent
+        value: insomnia/12.1.0
+        description: ""
+        disabled: false
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:8080/categories
+    name: Get all categories
+    meta:
+      id: req_d97f5807fa9f42ffb1474977589b1d45
+      created: 1765388616772
+      modified: 1765388622620
+      isPrivate: false
+      description: ""
+      sortKey: -1765384495747
+    method: GET
+    headers:
+      - name: User-Agent
+        value: insomnia/12.1.0
+        description: ""
+        disabled: false
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:8080/categories/3
+    name: Get a category specified by ID
+    meta:
+      id: req_bb149eeff1c943da8b05573ffe749301
+      created: 1765388951280
+      modified: 1765389541821
+      isPrivate: false
+      description: ""
+      sortKey: -1765383219729
+    method: GET
+    headers:
+      - name: User-Agent
+        value: insomnia/12.1.0
+        description: ""
+        disabled: false
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:8080/products/
+    name: Get a particular product
+    meta:
+      id: req_e42f1fcb64c84d7398ca13d17839b365
+      created: 1765393858818
+      modified: 1765395192334
+      isPrivate: false
+      description: ""
+      sortKey: -1765385771765
+    method: GET
+    headers:
+      - name: User-Agent
+        value: insomnia/12.1.0
+        description: ""
+        disabled: false
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+cookieJar:
+  name: Default Jar
+  meta:
+    id: jar_a7addc9299fa588b2d2f992c39ac304554215e9d
+    created: 1765386988697
+    modified: 1765386988697
+environments:
+  name: Base Environment
+  meta:
+    id: env_a7addc9299fa588b2d2f992c39ac304554215e9d
+    created: 1765386988697
+    modified: 1765386988697
+    isPrivate: false
