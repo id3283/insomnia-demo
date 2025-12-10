@@ -86,6 +86,63 @@ collection:
         send: true
         store: true
       rebuildPath: true
+  - url: https://jsonplaceholder.typicode.com/todos/99
+    name: Update a todo
+    meta:
+      id: req_864afee44fe14d908ed006b75603a5bb
+      created: 1765385751757
+      modified: 1765385942516
+      isPrivate: false
+      description: ""
+      sortKey: -1765381332989
+    method: PUT
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"userId": 5,
+        	"id": 99,
+        	"title": "Wash clothes",
+        	"completed": true
+        }
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/12.1.0
+        description: ""
+        disabled: false
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: https://jsonplaceholder.typicode.com/todos/99
+    name: Delete a todo
+    meta:
+      id: req_1c728d09f28340af85efcb9f657da913
+      created: 1765386023975
+      modified: 1765386091333
+      isPrivate: false
+      description: ""
+      sortKey: -1765381165816.5
+    method: DELETE
+    headers:
+      - name: User-Agent
+        value: insomnia/12.1.0
+        description: ""
+        disabled: false
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
 cookieJar:
   name: Default Jar
   meta:
