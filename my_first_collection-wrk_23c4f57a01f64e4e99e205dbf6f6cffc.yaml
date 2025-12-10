@@ -1,0 +1,101 @@
+type: collection.insomnia.rest/5.0
+schema_version: "5.1"
+name: Examples using JSONplaceholder dummy site
+meta:
+  id: wrk_23c4f57a01f64e4e99e205dbf6f6cffc
+  created: 1765384325943
+  modified: 1765384435483
+  description: ""
+collection:
+  - url: https://jsonplaceholder.typicode.com/todos/
+    name: Get all todos
+    meta:
+      id: req_cffab0876bf74616adbb7c4bc9b81f4e
+      created: 1765380998644
+      modified: 1765381658441
+      isPrivate: false
+      description: ""
+      sortKey: -1765380998644
+    method: GET
+    headers:
+      - name: User-Agent
+        value: insomnia/12.1.0
+        description: ""
+        disabled: false
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: https://jsonplaceholder.typicode.com/todos/99
+    name: Get a particular todo
+    meta:
+      id: req_7def75c6ccf94f1384b1bcc47f50418a
+      created: 1765381667334
+      modified: 1765381910336
+      isPrivate: false
+      description: ""
+      sortKey: -1765381667334
+    method: GET
+    headers:
+      - name: User-Agent
+        value: insomnia/12.1.0
+        description: ""
+        disabled: false
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: https://jsonplaceholder.typicode.com/todos
+    name: Create new todo
+    meta:
+      id: req_6293d1c0cea34f8faa322e30d5faf852
+      created: 1765381943511
+      modified: 1765382299758
+      isPrivate: false
+      description: ""
+      sortKey: -1765381943511
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"userId": 5,
+        	"title": "Do laundry",
+        	"completed": false
+        }
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/12.1.0
+        description: ""
+        disabled: false
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+cookieJar:
+  name: Default Jar
+  meta:
+    id: jar_8f24167d081446e0954ed6f63561e70e
+    created: 1765380998643
+    modified: 1765380998643
+environments:
+  name: Base Environment
+  meta:
+    id: env_8222ffd2372b406d8f74b45737940a8e
+    created: 1765380998643
+    modified: 1765380998643
+    isPrivate: false
