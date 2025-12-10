@@ -76,17 +76,50 @@ collection:
         send: true
         store: true
       rebuildPath: true
-  - url: http://localhost:8080/products/
+  - url: http://localhost:8080/products/1
     name: Get a particular product
     meta:
       id: req_e42f1fcb64c84d7398ca13d17839b365
       created: 1765393858818
-      modified: 1765395192334
+      modified: 1765401787260
       isPrivate: false
       description: ""
       sortKey: -1765385771765
     method: GET
     headers:
+      - name: User-Agent
+        value: insomnia/12.1.0
+        description: ""
+        disabled: false
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:8080/products
+    name: Create new product
+    meta:
+      id: req_7d2c0ff8977f4ca69177ee5def36e981
+      created: 1765401235835
+      modified: 1765401848008
+      isPrivate: false
+      description: ""
+      sortKey: -1765401235835
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"categoryId": 2,
+        	"productName": "Mike's magic sauce",
+        	"unitPrice": 2400.00
+        }
+    headers:
+      - name: Content-Type
+        value: application/json
       - name: User-Agent
         value: insomnia/12.1.0
         description: ""
