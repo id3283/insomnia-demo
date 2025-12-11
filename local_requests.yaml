@@ -76,12 +76,12 @@ collection:
         send: true
         store: true
       rebuildPath: true
-  - url: http://localhost:8080/products/1
+  - url: http://localhost:8080/products/81
     name: Get a particular product
     meta:
       id: req_e42f1fcb64c84d7398ca13d17839b365
       created: 1765393858818
-      modified: 1765401787260
+      modified: 1765469629632
       isPrivate: false
       description: ""
       sortKey: -1765385771765
@@ -104,7 +104,7 @@ collection:
     meta:
       id: req_7d2c0ff8977f4ca69177ee5def36e981
       created: 1765401235835
-      modified: 1765401848008
+      modified: 1765469930612
       isPrivate: false
       description: ""
       sortKey: -1765401235835
@@ -114,12 +114,69 @@ collection:
       text: |-
         {
         	"categoryId": 2,
-        	"productName": "Mike's magic sauce",
-        	"unitPrice": 2400.00
+        	"productName": "Humza's secret sauce",
+        	"unitPrice": 240.00
         }
     headers:
       - name: Content-Type
         value: application/json
+      - name: User-Agent
+        value: insomnia/12.1.0
+        description: ""
+        disabled: false
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:8080/products/9999
+    name: Update a particular product
+    meta:
+      id: req_ed909c3bd64a46aba1244118a0790e99
+      created: 1765473353082
+      modified: 1765473981930
+      isPrivate: false
+      description: ""
+      sortKey: -1765473353082
+    method: PUT
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"categoryId": 2,
+        	"productId": 9999,
+        	"productName": "Mike's extra hot magic sauce",
+        	"unitPrice": 800.0
+        }
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/12.1.0
+        description: ""
+        disabled: false
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:8080/products/81
+    name: Delete mike's sauce
+    meta:
+      id: req_89861be0c7e4442daf0981cb25f0c272
+      created: 1765475074506
+      modified: 1765475330669
+      isPrivate: false
+      description: ""
+      sortKey: -1765475074506
+    method: DELETE
+    headers:
       - name: User-Agent
         value: insomnia/12.1.0
         description: ""
